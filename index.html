@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP -->
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="nav_logo">KT</a>
+        <div>
+            <div class="toggle_switch"></div>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="spacer_container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+        </div>
+        <div class="nametag">
+            <div>
+                <p>Hi, my name is</p>
+            </div>
+            <div></div>
+        </div>
+        <h1>Kalle Tiihonen</h1>
+        <div class="spacer_container">
+            <div class="spacer"></div>
+            <div class="spacer_text">
+                <p>Multimedia design student living in Copenhagen</p>
+            </div>
+        </div>
+        <div class="arrow_container"></div>
+    </header>
+    <main>
+        <section id="projects">
+            <div class="projects_header">
+                <div class="links_list">
+                    <ul>
+                        <li><a href="#fonts_and_cards">Fonts &amp; Cards</a></li>
+                        <li><a href="#colors_and_ani">Colors &amp; Animation</a></li>
+                        <li><a href="#responsive">Responsive Design</a></li>
+                        <li><a href="#frameworks">Frameworks</a></li>
+                    </ul>
+                </div>
+                <h2>Projects</h2>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Get in touch</h2>
+            <p>You got a problem?</p>
+            <form id="contact_form">
+                <div class="form_group" id="name_group">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="Name" required />
+                </div>
+
+                <div class="form_group" id="email_group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="Email" required />
+                </div>
+
+                <div class="form_group" id="message_area">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="Message" required></textarea>
+                </div>
+
+                <div class="form_group" id="submit_button">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
