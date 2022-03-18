@@ -1,6 +1,8 @@
 :root {
     --display: 'Lexend Deca', sans-serif;
     --body: 'Open Sans', sans-serif;
+    --primary-light: #fff;
+    --char-grey: #222;
     --medium-grey: #CBCBCB;
 }
 
@@ -19,10 +21,12 @@ html {
 body {
     box-sizing: border-box;
     background-color: #fff;
-    color: #222;
+    color: var(--char-grey);
     font-family: var(--body);
     font-weight: 400;
     line-height: 1.5;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 p {
@@ -72,7 +76,7 @@ nav {
     align-items: center;
     width: 100%;
     height: 3rem;
-    border-bottom: solid 1px #222;
+    border-bottom: solid 1px var(--char-grey);
 }
 
 nav a {
@@ -93,7 +97,7 @@ div.links {
     /* font-size: 1rem; */
     font-weight: 500;
     height: 3rem;
-    border-left: solid 1px #222;
+    border-left: solid 1px var(--char-grey);
 }
 
 .nav_box>a {
@@ -106,5 +110,64 @@ div.links {
     font-weight: 800;
     font-size: 2rem;
     text-align: center;
-    border-right: solid 1px #222;
+    border-right: solid 1px var(--char-grey);
+}
+
+
+/* toggle switch styling */
+
+.toggle_container {
+    /* border: solid 1px hotpink; */
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+input[type=checkbox] {
+    /* styling for input element */
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    /* styling for labels */
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 30px;
+    background: var(--medium-grey);
+    float: right;
+    border: solid 1px var(--char-grey);
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    /* styling for labels - on toggle */
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: solid 1px var(--char-grey);
+    border-radius: 90px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+input :checked+label {
+    /* conditional check while toggling */
+    background: var(--medium-grey);
+}
+
+input:checked+label:after {
+    left: calc(100% - 5px);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
 }
