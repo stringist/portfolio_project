@@ -25,12 +25,12 @@ body {
     font-family: var(--body);
     font-weight: 400;
     line-height: 1.5;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    /* margin-left: 3rem;
+    margin-right: 3rem; */
 }
 
 p {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 h1,
@@ -119,7 +119,7 @@ div.links {
 .toggle_container {
     /* border: solid 1px hotpink; */
     margin-left: auto;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
 
 input[type=checkbox] {
@@ -129,7 +129,7 @@ input[type=checkbox] {
     visibility: hidden;
 }
 
-label {
+.switch {
     /* styling for labels */
     cursor: pointer;
     text-indent: -9999px;
@@ -142,7 +142,7 @@ label {
     position: relative;
 }
 
-label:after {
+.switch:after {
     /* styling for labels - on toggle */
     content: '';
     position: absolute;
@@ -168,6 +168,93 @@ input:checked+label:after {
     transform: translateX(-100%);
 }
 
-label:active:after {
+.switch:active:after {
     width: 45px;
+}
+
+header {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.spacer_container_top {
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+}
+
+.spacer_container_bottom {
+    width: 100%;
+    display: flex;
+}
+
+.spacer_top_L,
+.spacer_top_R {
+    border-top: solid 1px var(--char-grey);
+    height: 5rem;
+    width: 100%;
+}
+
+.spacer_top_L,
+.spacer_bottom_L {
+    border-right: solid 1px var(--char-grey);
+}
+
+.spacer_bottom_L,
+.spacer_bottom_R {
+    margin-top: 0;
+    border-bottom: solid 1px var(--char-grey);
+    height: 5rem;
+    width: 100%;
+}
+
+.nametag {
+    border-top: solid 1px var(--char-grey);
+    border-left: solid 1px var(--char-grey);
+    border-right: solid 1px var(--char-grey);
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.nametag :first-child {
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border-right: solid 1px var(--char-grey); */
+}
+
+.nametag :first-child p {
+    text-align: center;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.nametag :nth-child(2) {
+    grid-column: 2/3;
+    border-left: solid 1px var(--char-grey);
+}
+
+.cbcb {
+    background-color: #CBCBCB;
+}
+
+header h1 {
+    border: solid 1px var(--char-grey);
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 11vw;
+}
+
+.spacer_text p {
+    margin-left: 3rem;
+    line-height: 1.3rem;
+    font-weight: 100;
+    vertical-align: middle;
+}
+
+.spacer_text :first-child {
+    font-weight: 600;
+    padding-top: 1rem;
 }
