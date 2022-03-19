@@ -259,6 +259,11 @@ header {
     border: solid 1px var(--char-grey);
 }
 
+.arrow_link {
+    color: var(--char-grey);
+    font-weight: 600;
+}
+
 header h1 {
     display: inline-block;
     /* text-align: center; */
@@ -280,18 +285,26 @@ header h1 {
     padding-top: 1rem;
 }
 
+.arrow_container {
+    margin: 6rem auto 6rem auto;
+    height: 2rem;
+    width: 2rem;
+    background-image: url("./assets/down_arrow.svg");
+    background-size: cover;
+}
+
 
 /* projects styling */
 
 #projects {
-    margin-top: 6rem;
+    /* margin-top: 3rem; */
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .projects_header {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-left: 4vw;
-    margin-right: 4vw;
     height: 12rem;
 }
 
@@ -357,6 +370,50 @@ header h1 {
     text-align: center;
 }
 
+#projects article {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* flex-wrap: wrap; */
+}
+
+
+/* fonts & ui cards styling */
+
+.card_text {
+    grid-column: 1/2;
+    padding-right: 3rem;
+}
+
+.cards_graphic {
+    grid-column: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    /* border: solid 1px pink; */
+}
+
+.card_container {
+    width: 18vw;
+    height: 27vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card_1 {
+    background-image: url("./assets/card_1_grey.svg")
+}
+
+.card_2 {
+    background-image: url("./assets/card_2_grey.svg")
+}
+
+.card_3 {
+    background-image: url("./assets/card_3_grey.svg")
+}
+
 
 /* contact form styling */
 
@@ -380,8 +437,7 @@ header h1 {
     font-size: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    padding-left: .5rem;
-    width: 100%;
+    /* padding-left: .5rem; */
 }
 
 #name_group {
@@ -394,7 +450,6 @@ header h1 {
 
 #message_area {
     grid-column: 1/3;
-    /* width: 100%; */
 }
 
 textarea {
@@ -410,19 +465,21 @@ textarea {
 }
 
 #contact_form :last-child {
-    margin-top: .5rem;
+    /* margin-top: .5rem; */
 }
 
 #submit_button {
-    background-color: var(--char-grey);
+    /* background-color: var(--char-grey); */
     margin-top: .5rem;
     grid-column: 1/3;
 }
 
 #submit_button button {
+    margin-top: 0;
     vertical-align: middle;
     background-color: var(--char-grey);
-    height: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
     border: none;
     color: var(--primary-light);
 }
