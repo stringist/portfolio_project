@@ -251,12 +251,21 @@ header {
     background-color: #CBCBCB;
 }
 
-header h1 {
+.name_container {
+    border: solid 1px hotpink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: solid 1px var(--char-grey);
-    text-align: center;
+}
+
+header h1 {
+    display: inline-block;
+    /* text-align: center; */
     margin-top: 0;
     margin-bottom: 0;
     font-size: 11vw;
+    font-size: 9vw;
 }
 
 .spacer_text p {
@@ -274,11 +283,78 @@ header h1 {
 
 /* projects styling */
 
+#projects {
+    margin-top: 6rem;
+}
+
 .projects_header {
-    display: flex;
-    border: solid 1px hotpink;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin-left: 4vw;
     margin-right: 4vw;
+    height: 12rem;
+}
+
+.links_list {
+    grid-column: 1/2;
+    border-right: solid 1px var(--char-grey);
+    border-left: solid 1px var(--char-grey);
+    border-bottom: solid 1px var(--char-grey);
+}
+
+.links_list ul {
+    height: 100%;
+}
+
+.links_list ul li button a {
+    color: var(--char-grey);
+}
+
+.links_list ul li button {
+    height: 3rem;
+    width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+    border-radius: 0px;
+    border-left: none;
+    border-top: solid 1px var(--char-grey);
+    border-right: none;
+    border-bottom: none;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.button_1 {
+    background-color: #CDCDCD;
+}
+
+.button_2 {
+    background-color: #DDDDDD;
+}
+
+.button_3 {
+    background-color: #EFEFEF;
+}
+
+.button_4 {
+    background-color: #FFFFFF;
+}
+
+.projects_h2_container {
+    height: 12rem;
+    background-color: #E6E6E6;
+    border: solid 1px var(--char-grey);
+    border-left: none;
+    display: flex;
+    align-items: center;
+}
+
+.projects_header h2 {
+    margin: auto;
+    /* height: 12rem; */
+    width: 100%;
+    grid-column: 2/3;
+    text-align: center;
 }
 
 
