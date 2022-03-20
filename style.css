@@ -573,6 +573,7 @@ footer {
     margin-top: 3rem;
     font-size: .8rem;
     color: #888;
+    width: 100%;
 }
 
 footer a {
@@ -589,6 +590,7 @@ footer a {
     gap: 6vw;
     margin: 4vw;
     margin-top: 8vw;
+    margin-bottom: 12vw;
 }
 
 .detail_article h1 {
@@ -613,4 +615,9 @@ footer a {
 img {
     width: 100%;
     height: auto;
+}
+
+.fullpage_container {
+    display: flex;
+    gap: 3rem;
 }
