@@ -635,3 +635,10 @@ img {
     display: flex;
     gap: 3rem;
 }
+
+a:hover,
+button:hover {
+    /* font-size: 20px; */
+    transform: scale(102%);
+    /* filter: brightness(3) */
+}
