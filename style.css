@@ -295,6 +295,7 @@ header h1 {
 section {
     margin-left: 4vw;
     margin-right: 4vw;
+    /* margin-bottom: 22vw; */
 }
 
 
@@ -370,6 +371,8 @@ section {
 
 #projects article {
     margin-top: 6rem;
+    margin-bottom: 12vw;
+    min-height: 12rem;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
