@@ -20,7 +20,7 @@ to(downArrow, { y: '+=8', ease: Sine.easeInOut, duration: .8 });
 
 const cubes = document.querySelectorAll(".cube");
 const cubetl = gsap.timeline({ repeat: -1, delay: .5, repeatDelay: .5 });
-gsap.from(cubes, { x: "-50vw", rotation: -400, duration: 2, ease: "back", stagger: -.4, scrollTrigger: { trigger: cubes, markers: false, start: "top 65%", end: "bottom 40%", toggleActions: "play reverse reset reverse" } });
+gsap.from(cubes, { x: "-60vw", rotation: -400, duration: 2, ease: "back", stagger: -.4, scrollTrigger: { trigger: cubes, markers: false, start: "top 75%", end: "bottom 40%", toggleActions: "play reverse reset reverse" } });
 // cubetl.to(cubes, { rotation: -10, duration: .1, delay: 2, ease: "none" });
 // cubetl.to(cubes, { rotation: 0, duration: .5, ease: "back" });
 gsap.to(cubes, { y: -6, repeat: -1, duration: 1, stagger: { each: .2, repeat: Infinity, yoyo: true } });
@@ -29,7 +29,7 @@ gsap.to(cubes, { y: -6, repeat: -1, duration: 1, stagger: { each: .2, repeat: In
 
 
 const screen = document.querySelector(".device_container");
-const screentl = gsap.timeline({ repeat: -1, delay: .5, repeatDelay: .5 });
+const screentl = gsap.timeline({ repeat: -1, delay: 1.5, repeatDelay: .5 });
 
 screentl.to(screen, { duration: 1, scaleX: .5, scaleY: .5, rotation: 90, ease: "sine" });
 screentl.to(screen, { duration: 1, scaleX: .5, scaleY: .6, delay: 1, ease: "bounce" });

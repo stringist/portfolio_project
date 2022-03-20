@@ -491,8 +491,10 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 30.5vw;
-    width: 50vw;
+    /* height: 30.5vw;
+    width: 50vw; */
+    height: 26.5vw;
+    width: 44vw;
     margin-left: auto;
     margin-right: auto;
 }
