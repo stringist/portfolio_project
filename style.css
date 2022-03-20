@@ -502,6 +502,20 @@ section {
     margin-right: auto;
 }
 
+.odd .cards_graphic {
+    border: none;
+}
+
+#framework {
+    align-items: center;
+}
+
+.framework_graphic {
+    height: 12rem;
+    background-image: url("./assets/stacks.svg");
+    background-position: center;
+}
+
 
 /* contact form styling */
 
