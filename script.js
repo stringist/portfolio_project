@@ -24,7 +24,7 @@ const cards = document.querySelectorAll(".UI_card");
 
 gsap.fromTo(cards, 2, { opacity: 0, }, {
     opacity: 1,
-    scrollTrigger: { trigger: cards, scrub: 1.5, markers: true, start: "top 75%", end: "bottom 30%", toggleActions: "play reverse reverse reverse" }
+    scrollTrigger: { trigger: cards, scrub: 1.5, markers: false, start: "top 75%", end: "bottom 30%", toggleActions: "play reverse reverse reverse" }
 });
 
 const bouncetl = gsap.timeline({ repeat: -1, repeatDelay: 3 });
