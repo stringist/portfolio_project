@@ -428,15 +428,15 @@ section {
 }
 
 .card_1 {
-    background-image: url("./assets/card_1_grey.svg");
+    background-image: url("../assets/card_1_grey.svg");
 }
 
 .card_2 {
-    background-image: url("./assets/card_2_grey.svg");
+    background-image: url("../assets/card_2_grey.svg");
 }
 
 .card_3 {
-    background-image: url("./assets/card_3_grey.svg");
+    background-image: url("../assets/card_3_grey.svg");
 }
 
 
@@ -513,7 +513,7 @@ section {
 
 .framework_graphic {
     height: 12rem;
-    background-image: url("./assets/stacks.svg");
+    background-image: url("../assets/stacks.svg");
     background-position: center;
 }
 
